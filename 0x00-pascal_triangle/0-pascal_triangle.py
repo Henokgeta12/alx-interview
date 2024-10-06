@@ -12,7 +12,6 @@ def pascal_triangle(n):
         c = 1
         row.append(c)
         for j in range(1, i):
-            # Calculate the next value based on the previous row
             c = c * (i - j) // j
             row.append(c)
         triangle.append(row)
